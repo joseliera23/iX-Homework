@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    color: white
+}
+
+#headshot {
+    width: 200px;
+    height: 300px;
+}
