@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/fun.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+    <body class="bg-dark">
+        <main>
+            <div class="container">
+                <div class="bg-dark pb-2">
+                    <img id="me-still" src="img/me.png" class="rounded mx-auto d-block w-25 pb-3" alt="Headshot of me taken in 2019">
+                    <button class="mx-auto d-block" onclick="toggleMotion()"> Press me for fun!</button>
+                </div>
+                <div class="bg-dark">
+                    <p class="text-light"> Hi! I'm a rising senior at Harvey Mudd College, joint-majoring in Computer Science and Math.
+                        Most of my CS experience is in Python, Java, and C++, so I'm excited to explore the frontend side of things.</p>
+
+                    <p class="text-light"> In my free time, I like to read books, watch shows, play video games, and study philosophy and psychology.
+                        I've surprised myself recently because I've been able to motivate myself and communicate better by applying things I've learned from psychology.
+                        I'm thinking about creating a website for a blog where I analyze cartoons / shows / other fiction psychologically.</p>
+
+                    <p class="text-light"> I'm excited to gain experience collaborating with a team and contributing to a project that has a social impact, and I hope to have lots of fun! </p>
+                </div>
+
+                <div class="bg-secondary">
+                    <h1 class="text-center"> Some of my favorite shows and games:</h1>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="img/gravityfalls.jpg" class="card-img-top" alt="Title poster for Gravity Falls">
+                                <div class="card-body">
+                                  <p class="card-text">I was obsessed with Gravity Falls when it aired on Disney Channel back in 2016. It's a kids show that successfully pulls off tension, mystery, suspense, and apocalyptic storytelling. It'll always have a place in my heart.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="img/gambit.jpg" class="card-img-top" alt="Title poster for the Queen's Gambit">
+                                <div class="card-body">
+                                  <p class="card-text">I admire Beth Harmon from The Queen's Gambit because she's passionate about what she does and she doesn't let people get in the way of her goals, despite her own struggles. Also, it's a pretty great Netflix series.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="img/sherlock.jpg" class="card-img-top" alt="Title poster for BBC's Sherlock">
+                                <div class="card-body">
+                                    <p class="card-text">I'm not familiar with the original Sherlock books, but I love BBC's modernized take on Sherlock.
+                                    I find myself looking up to Sherlock because of his quick wits in dangerous situations. He's the epitome of on-the-fly thinking.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img src="img/minecraft.jpg" class="card-img-top" alt="Promotional poster for Minecraft">
+                                <div class="card-body">
+                                    <p class="card-text">I was first drawn to Minecraft when I was a teenager, and out of all of the video games I've played, this one will stick with me forever. There are infinite things to do, and I love creating redstone contraptions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div>Some fun buttons</div> -->
+            </div>
+
+
+
+            <!-- <div id="container1" style = "background-color: grey" class="container m-2">
+                <div class="row">
+                    <div class="col-5">
+                        <img style="width: 100%; height: 97%" src="img/me.png" alt="A formal headshot of me, taken in Summer 2019."/>
+                    </div>
+    
+                    <div class="col-6">
+                        <h1 id ='github' style="color: white">GitHub: joseliera23</h1>
+                        <p id = 'p1' style="color: white">
+                            Hi! I'm a rising senior at Harvey Mudd College, joint-majoring in Computer Science and Math.
+                            Most of my CS experience is in Python, Java, and C++, so I'm excited to explore the frontend side of things.
+                        </p>
+                        <p id = 'p2' style="color: white">
+                            In my free time, I like to read books, watch shows, play video games, and study philosophy and psychology.
+                            I've surprised myself recently because I've been able to motivate myself and communicate better after applying psychological advice I've explored on my own,
+                            and I'm thinking about creating a website for a blog where I do a psychological analysis on cartoons/shows/other fiction.
+                        </p>
+                        <p id = 'p3' style="color: white">
+                        I'm excited to gain experience collaborating with a team and contributing to a project that has a social impact, and despite a rough first week, I hope to catch up and have lots of fun!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section>
+            <form>
+                <div id='container2' style="background-color: grey" class="container m-2">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="textbox" placeholder="Type anything here!">
+                        </div>
+                        <div class="col">
+                            <label id='label1' style="color: white">
+                                <input type="checkbox" onclick="invertAllColors()" name="checkbox"> Toggle colors
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label id='label2' style="color: white">
+                                <input type="radio" onclick="toggle()" name="radiobox"> Show interests
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div id='interests' style="background-color: grey; display: none" class="container m-2">
+                <div class="row">
+                    <div class="col-3">
+                        <img style="width: 100%" src="img/gambit.jpg" alt="Title poster for Netflix's 'The Queen's Gambit.'"/>
+                    </div>
+                    <div class="col-3">
+                        <img style="width: 100%" src="img/sherlock.jpg" alt="Title poster for BBC's 'Sherlock'"/>
+                    </div>
+                    <div class="col-3">
+                        <img style="width: 100%" src="img/minecraft.jpg" alt="Title poster for 'Minecraft.'"/>
+                    </div>
+                    <div class="col-3">
+                        <img style="width: 100%" src="img/philosophy.jpg" alt="Philosopher statue in front of a building in Athens"/>
+                    </div>
+                    <div class="col-3">
+                        <img style="width: 100%" src="img/gravityfalls.jpg" alt="Title poster for Disney Channel's 'Gravity Falls.'"/>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <script src="js/fun.js"></script>
+    </body>
+</html>
