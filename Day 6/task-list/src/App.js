@@ -1,17 +1,22 @@
-import React from 'react'
-import Counter from "./components/Counter";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import TaskInput from './components/TaskInput';
+import TaskTable from './components/TaskTable';
 
 export default function App() {
   
-  function onCounterChanged(count, time) {
-    console.log(count, time);
-  }
 
   return (
-    <div className='test'>
-
-      <Counter change={onCounterChanged}></Counter>
+    <div className='container mt-4'>
       
+      <div className='card card-body text-center'>
+        <h1>Task List</h1>
+        <hr></hr>
+        <div>Our Simple Task List</div>
+
+        <TaskInput></TaskInput>
+        <TaskTable></TaskTable>
+      </div>
 
     </div>
   )
